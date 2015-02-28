@@ -42,6 +42,7 @@ def processOneUrl(url):
             html_page_read = html_page.read()
             error = False 
             if ("Acesso - bloqueado" in  html_page_read):
+                print "Acesso bloqueado: dormindo..."
                 time.sleep(sleep_local_time)
                 sleep_local_time += sleep_time
                 error = True
